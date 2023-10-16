@@ -1,0 +1,14 @@
+[package]
+name = "esp32c3"
+version = "0.1.0"
+authors = ["sebastos1 <sebastiandalknu@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+hal = { package = "esp32c3-hal", version = "0.12.0" }
+esp-backtrace = { version = "0.8.0", features = ["esp32c3", "panic-handler", "exception-handler", "print-uart"] }
+esp-println = { version = "0.6.0", features = ["esp32c3"] }
+embedded-graphics = "0.8.1"
+lcd1602-driver = "0.1.0"
+heapless = "0.7.16"
